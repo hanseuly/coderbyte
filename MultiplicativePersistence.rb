@@ -3,7 +3,7 @@ def MultiplicativePersistence(num)
   nums = Array.new
   loop do
     if num >= 10
-     num = num.to_s.split(//).map{|i| i.to_i}.inject(:+)
+     num = num.to_s.split(//).map{|i| i.to_i}.inject(:*)
      else num < 10
       break
     end
